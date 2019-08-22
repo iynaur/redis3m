@@ -116,3 +116,6 @@ IF (DOXYGEN_FOUND)
   WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
 ENDIF (DOXYGEN_FOUND)
+
+add_executable(example examples/simple.cpp)
+target_link_libraries(example redis3m)
